@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script type="text/javascript">
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+  </script>
+</head>
+<body>
+  <div class="box">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide ">
+          <img src="./img/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide ">
+          <img src="./img/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide ">
+          <img src="./img/6.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay: false,//可选选项，自动滑动
+      // slidesPerView:1.086,
+      // slidesOffsetBefore: '7.3%',
+      centeredSlides: true,
+      slidesPerView:'auto',
+      spaceBetween : '2.7%'
+    })
+    console.log(mySwiper.width);
+  </script>
+</body>
+</html>
