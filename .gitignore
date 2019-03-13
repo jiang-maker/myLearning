@@ -1,0 +1,5 @@
+miniapp/dist/*
+miniapp/node_modules/*
+myweb/node_modules/*
+react-project/demo1/node_modules/*
+typescriptDemo/node_modules/*

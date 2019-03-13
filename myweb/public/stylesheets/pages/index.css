@@ -1,0 +1,20 @@
+
+.index-content .index-btns{
+  padding-top: 680px;
+  width: 380px;
+  height: 80px;
+}
+.index-content .index-btns a{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #669999;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+}
+.index-content .index-btns .btn1{
+  margin-right: 20px;
+}

@@ -1,0 +1,17 @@
+extends layout
+
+block append page-seo
+  meta(name="KeyWords" content="首页")
+  meta(name="description" content="描述内容")
+
+block append page-css
+  link(rel="stylesheet", href="/stylesheets/pages/index.css")
+
+block content
+  .index-content
+    .index-btns
+      a.btn1(href="/users/regist") 立即注册
+      a.btn2(href="/users/login") 立即登录
+    
+block append page-js
+  script(src="/javascripts/pages/index.js")

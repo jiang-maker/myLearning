@@ -1,0 +1,47 @@
+extends ../layout
+
+block append page-seo
+  meta(name="KeyWords" content="登录")
+  meta(name="description" content="描述内容")
+
+block append page-css
+  link(rel="stylesheet", href="/stylesheets/pages/login.css")
+
+block content
+  .login-content
+    h2  Joel Adams
+    .login-content-block
+      form#loginForm
+        .form-group
+          label(for="InputEmail1") 登录邮箱
+          input.form-control#InputEmail1(type="email" aria-describedby="emailHelp" placeholder="请输入邮箱" name="firstname")
+        .form-group
+          label(for="InputPassword")  密码
+          input.form-control#InputPassword(type="password" placeholder="请输入密码" name="lastname")
+        
+        buttton.btn.btn-primary(type="submit" value="submit") 登录
+        //- .button-block
+        //-   buttton.btn.btn-block.btn-primary.submit(type="submit" value="submit") 登录
+          //- buttton.btn.btn-block.btn-secondary(type="submit") 立即注册？
+    
+block append page-js
+  script(src="/javascripts/jquery.validate.min.js")
+  //- script(src="/javascripts/pages/users.js")
+  script.
+    $.validator.setDefaults({
+      submitHandler: function() {
+        alert("提交事件!");
+      }
+    });
+    $().ready(function() {
+      $("#loginForm").validate({
+        rules: {
+          firstname: "required",
+          lastname: "required"
+        },
+        messages: {
+          firstname: "请输入您的名字",
+          lastname: "请输入您的姓氏"
+        }
+      });
+    });

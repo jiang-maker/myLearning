@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title= '远山'
+    block page-seo
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="format-detection" content="telephone=no")
+    meta(name="apple-mobile-web-app-capable" content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style" content="black")
+    meta(name="renderer" content="webkit")
+    link(rel="shortcut icon", href="/images/favicon.png", type="image/x-icon")
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/common.css')
+    link(rel='stylesheet', href='/stylesheets/global.css')
+    block page-css
+  body
+    include component/header
+    section
+      .container
+        block content
+    include component/footer
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/bootstrap.min.js")
+    block page-js
