@@ -340,7 +340,7 @@
     "object.omit": "^2.0.1",
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.1",
-    "open": "^0.0.5",
+    "open": "^7.0.3",
     "once": "^1.4.0",
     "optimist": "^0.6.1",
     "original": "^1.0.0",
