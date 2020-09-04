@@ -326,7 +326,7 @@
     "node-fetch": "^1.6.3",
     "node-libs-browser": "^0.6.0",
     "node-gyp": "^3.4.0",
-    "node-sass": "^3.13.0",
+    "node-sass": "^4.14.1",
     "nopt": "^3.0.6",
     "normalize-package-data": "^2.3.5",
     "normalize-path": "^2.0.1",
